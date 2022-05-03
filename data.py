@@ -2,53 +2,61 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    generate_single_button = [InlineKeyboardButton("‹ بدء استخراج جلسة ›", callback_data="generate")]
+    generate_single_button = [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
 
     home_buttons = [
         generate_single_button,
-        [InlineKeyboardButton(text="‹ الصفحة الرأيسية ›", callback_data="home")]
+        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
     ]
 
     generate_button = [generate_single_button]
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("✯𝐌𝐒✯ 𝒗𝒊𝒓𝒖𝒔┋✘🇨🇦!", url="https://t.me/FLASH_MASR")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://telegra.ph/file/51b6e6a9cdc94f2d392eb.jpg")],
         [
-            InlineKeyboardButton("‹ طريقة الاستخدام ›", callback_data="help"),
-            InlineKeyboardButton("‹ حول البوت ›", callback_data="about")
+            InlineKeyboardButton("How to Use ❔", callback_data="help"),
+            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗔𝗘𝗦𝗧𝗥𝗢┋✘🇨🇦!", url="https://t.me/APP_YOUTUBE")],
+        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/x3j_xj3")],
     ]
 
     START = """
-━━━━━━━━🍁━━━━━━━━
-⌯¦ ** مرحبـاً بـك عزيـزي ** {}
-⌯¦ ** في بــوت استـخـراج جلـسـة **
-⌯¦ ** استـخـراج تيرمـكـس تليثون **
-⌯¦ ** وبــايــروجـرام للـمـيــوزك🎧 **
-━━━━━━━━🍁━━━━━━━━
-By @FLASH_MASR
+Hey {}
+
+Welcome to {}
+
+If you don't trust this bot, 
+1) stop reading this message
+2) delete this chat
+
+Still reading?
+You can use me to generate pyrogram (even version 2) and telethon string session. Use below buttons to learn more !
+
+By @StarkBots
     """
 
     HELP = """
-✨ **اوامر البوت** ✨
+✨ **Available Commands** ✨
 
-/about - حول البوت
-/help - المساعدة
-/start - بدء
-/generate - بدء استخراج جلسة
-/cancel - 
-/restart - اعادة تشغيل
+/about - About The Bot
+/help - This Message
+/start - Start the Bot
+/generate - Generate Session
+/cancel - Cancel the process
+/restart - Cancel the process
 """
 
-    # About Message
     ABOUT = """
-**حول البوت** 
+**About This Bot** 
 
-- بوت يقوم باستخراج جلسة تيليثون (كود تيرمكس) و جلسة بايروجرام .
+Telegram Bot to generate Pyrogram and Telethon string session by @StarkBots
 
-[𝗦𝗢𝗨𝗥𝗖𝗘 𝗠𝗔𝗘𝗦𝗧𝗥𝗢┋✘🇨🇦!](https://t.me/APP_YOUTUBE)
+Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
 
+Framework : [Pyrogram](https://docs.pyrogram.org)
 
+Language : [Python](https://www.python.org)
+
+Developer : @StarkProgrammer
     """
