@@ -2,61 +2,53 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    generate_single_button = [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+    generate_single_button = [InlineKeyboardButton("- بـدء إستخـراج كـود .", callback_data="generate")]
 
     home_buttons = [
         generate_single_button,
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="- رجوع .", callback_data="home")]
     ]
 
     generate_button = [generate_single_button]
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://telegra.ph/file/51b6e6a9cdc94f2d392eb.jpg")],
+        [InlineKeyboardButton("- قنـاة السـورس .", url="https://t.me/x3j_xj3")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("- التعـليمـات ؟! .", callback_data="help"),
+            InlineKeyboardButton("- حـول البـوت .", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/x3j_xj3")],
+        [InlineKeyboardButton("H𝗢𝗦𝗦𝗔𝗠࿃", url="https://t.me/H_OS_S_AM")],
     ]
 
     START = """
-Hey {}
+ مرحبـاً بـك عزيـزي {}
 
-Welcome to {}
+- فـي بـوت {}
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
+- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس تم انشـاء هـذا البـوت بواسطـة
 
-Still reading?
-You can use me to generate pyrogram (even version 2) and telethon string session. Use below buttons to learn more !
-
-By @StarkBots
+- BY @H_OS_S_AM
     """
 
     HELP = """
-✨ **Available Commands** ✨
+** - اوامـر البــوت : **
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Generate Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about - حـول البـوت
+/help - التعليـمات
+/start - ابـدأ 
+/generate - بـدء إستخـراج جلسـه جديـده
+/cancel - الغـاء
+/restart - اعـادة الاستخـراج
 """
 
     ABOUT = """
-**About This Bot** 
+**- حـول البـوت .** 
 
-Telegram Bot to generate Pyrogram and Telethon string session by @StarkBots
+- بـوت استخـراج كـود تيرمكـس 
+- قنـاة السـورس : @x3j_xj3
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
+- الـمـطـور الاساسي للسورس : @H_OS_S_AM .
 
-Framework : [Pyrogram](https://docs.pyrogram.org)
-
-Language : [Python](https://www.python.org)
-
-Developer : @StarkProgrammer
+- لغـة البـوت : بـايثـون .
     """
